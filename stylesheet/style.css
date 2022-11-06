@@ -5,7 +5,7 @@
 
 body {
   width: 100%;
-  font-family: 'TitilliumWeb-Regular';
+  font-family: "TitilliumWeb-Regular";
   font-size: 8px;
 }
 
@@ -13,56 +13,99 @@ header {
   background-color: rgb(135, 80, 156);
 }
 
-header>.navigation {
+header > .navigation {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 57px;
-  
 }
 
 header nav {
   display: flex;
 }
 
-header nav>a {
+header nav > a {
   color: #ffffff;
- padding: 0 18px;
- font-size: 16px;
-text-decoration: none;
+  padding: 0 18px;
+  font-size: 16px;
+  text-decoration: none;
 }
-header nav>a:hover {
-  background-color: #643A79;
+header nav > a:hover {
+  background-color: #643a79;
   border-radius: 5px;
 }
 
 header .head_content {
-padding-top: 133px;
-text-align: center;
-padding-left: 15%;
-padding-right: 15%;
+  padding-top: 133px;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-header .head_content>h1 {
-font-family: "TitilliumWeb-Bold";
-color: #ffffff;
-font-size: 42px;
+header .head_content > h1 {
+  font-family: "TitilliumWeb-Bold";
+  color: #ffffff;
+  font-size: 42px;
 }
 
+header .head_content > button {
+  background-color: #eb7d4b;
+  border-radius: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid rgba(0, 0, 0, 0.423) 4px;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 21px 82px;
+  margin-top: 26px;
+  margin-bottom: 145px;
+}
+
+header .head_content > button:hover {
+  cursor: pointer;
+}
+
+header .head_content > button:active {
+  background-color: #aa542c;
+  color: #a9a9a9;
+}
 /* -------------- */
 
 main {
-
+  background-color: #17c2a4;
+  margin-top: 0;
 }
 
+main .main_1>h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "TitilliumWeb-Bold";
+  color: #ffffff;
+  font-size: 40px;
+  padding-top: 107px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+main .main_1>p {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-top: 25px;
+  padding-bottom: 69px;
+}
+
+
 @font-face {
-  font-family: "TitilliumWeb-Regular"
-  ;
+  font-family: "TitilliumWeb-Regular";
   src: url(../fonts/TitilliumWeb-Regular.ttf);
 }
 
 @font-face {
-  font-family: "TitilliumWeb-Bold"
-  ;
+  font-family: "TitilliumWeb-Bold";
   src: url(../fonts/TitilliumWeb-Bold.ttf);
 }

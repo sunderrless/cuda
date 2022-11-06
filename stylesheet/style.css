@@ -20,6 +20,10 @@ header > .navigation {
   padding-top: 57px;
 }
 
+header > .navigation .logo:hover {
+transform: scale(1.1);
+}
+
 header nav {
   display: flex;
 }
@@ -33,6 +37,7 @@ header nav > a {
 header nav > a:hover {
   background-color: #643a79;
   border-radius: 5px;
+  transform: scale(1.1);
 }
 
 header .head_content {
@@ -64,11 +69,13 @@ header .head_content > button {
 
 header .head_content > button:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 header .head_content > button:active {
   background-color: #aa542c;
   color: #a9a9a9;
+  border-color:#aa542c;
 }
 /* -------------- */
 

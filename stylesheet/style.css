@@ -103,9 +103,28 @@ main .main_1>p {
   padding-left: 30%;
   padding-right: 30%;
   margin-top: 25px;
-  padding-bottom: 69px;
+ 
 }
 
+main .main_1-1 {
+  display: flex;
+  justify-content: space-between;
+padding-left: 15%;
+padding-right: 15%;
+padding-top: 69px;
+}
+
+main > h3  {
+  display: flex;
+  justify-content: space-around; 
+  font-family: 'TitilliumWeb-Bold';
+  font-size: 24px;
+  color:#ffffff;
+  align-items: center;
+  text-align: justify;
+
+ /* margin-top: 60px; */
+}
 
 @font-face {
   font-family: "TitilliumWeb-Regular";

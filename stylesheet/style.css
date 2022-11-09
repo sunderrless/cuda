@@ -112,18 +112,22 @@ main .main_1-1 {
 padding-left: 15%;
 padding-right: 15%;
 padding-top: 69px;
+align-items: flex-end;
 }
 
-main > h3  {
+
+
+main .main-abc {
   display: flex;
-  justify-content: space-around; 
   font-family: 'TitilliumWeb-Bold';
   font-size: 24px;
   color:#ffffff;
   align-items: center;
-  text-align: justify;
-
- /* margin-top: 60px; */
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+ margin-top: 60px;
+ 
 }
 
 @font-face {

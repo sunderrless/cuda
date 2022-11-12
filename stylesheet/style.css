@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden ;
+}
 body {
   width: 100%;
   font-family: "TitilliumWeb-Regular";
@@ -60,6 +63,7 @@ header .head_content > button {
   border-left: none;
   border-right: none;
   border-bottom: solid rgba(0, 0, 0, 0.15) 4px;
+  font-family: "TitilliumWeb-SemiBold";
   font-size: 18px;
   color: #ffffff;
   padding: 21px 82px;
@@ -80,7 +84,6 @@ header .head_content > button:active {
 /* -------------- */
 
 main {
-  background-color: #17c2a4;
   margin-top: 0;
 }
 
@@ -118,6 +121,7 @@ main .collection-cards-line {
   display: flex;
   justify-content: space-between;
   padding-top: 69px;
+  flex-wrap: wrap;
 }
 main .collection-cards-line > div {
   display: flex;
@@ -147,6 +151,7 @@ main .s1-content-card > h3 {
 
 main .s1 {
   padding: 107px 15%;
+  background-color: #17c2a4;
 }
 
 main .s1 img {
@@ -549,8 +554,8 @@ main .s6 > div > button:active {
 }
 
 footer {
-  padding: 0 15%;
-  height: 112px;
+  padding: 40px 15%;
+  /* height: 112px; */
   background-color: #344B8E;
   display: flex;
   justify-content: space-between;
@@ -593,5 +598,109 @@ footer>a:hover {
   }
   to {
     transform: scale(1.1);
+  }
+}
+
+@media (max-width: 1150px)  {
+  main .collection-cards-line>div {
+    flex-basis: calc(50% - 10px);
+    padding-top: 10px;
+  }
+  main .s1 img {
+    padding: 0;
+  }
+}
+@media (max-width: 1000px)  {
+ footer {
+  padding: 30px 32px;
+ }
+ main .s1 {
+  padding: 107px 32px;
+ }
+ main .s2 {
+  padding: 107px 32px;
+ }
+ 
+ main .s1 img {
+  padding: 0;
+}
+main .collection-cards-line>div {
+  flex-basis: calc(50% - 10px);
+  padding-top: 10px;
+}
+}
+
+@media (max-width: 870px)  {
+  header .head_content > h1 {
+    font-size: 32px;
+    padding: 10px 32px;
+  }
+  footer>a {
+    font-size: 18px;
+  }
+  main .s1-head-section > h2 {
+    font-size: 32px;
+  }
+  main .s1-head-section > p {
+    font-size: 18px;
+  }
+  main .s2-head-section > h2 {
+    font-size: 32px;
+  }
+  main .s2-head-section > p {
+    font-size: 18px;
+  }
+
+  main .collection-cards-line>div {
+    flex-basis: calc(50% - 10px);
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 670px)  {
+  footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  footer>a {
+    font-size: 18px;
+    padding: 5px 0;
+  }
+  main .s1-content-card > h3 {
+    font-size: 18px;
+  }
+  main .s1-content-card > p {
+    font-size: 12px;
+  }
+  main .s2-content-card > h3 {
+    font-size: 18px;
+  }
+  main .s2-content-card > p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 540px) {
+  header nav {
+    display: none;
+  }
+  header .head_content{
+    padding: 62px 32px 0;
+  }
+  header .navigation {
+    justify-content: flex-start;
+  }
+  header .head_content > h1 {
+    font-size: 24px;
+  }
+  header .head_content > button {
+    padding: 13px 40px;
+    font-size: 16px;
+    margin-bottom: 42px;
+  }
+  main .collection-cards-line>div {
+    display: block;
+    text-align: center;
   }
 }
